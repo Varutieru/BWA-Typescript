@@ -17,4 +17,8 @@ heroes = 20;
 heroes = [];
 heroes = {};
 heroes = true || false || "string";
+// Union type
+let phone;
+phone = 6281903184000;
+phone = "081903184000";
 //# sourceMappingURL=typeDasar.js.map
