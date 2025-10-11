@@ -39,3 +39,10 @@ const fullName = (first: string, last: string = "Siahaan"): string => {
 }
 
 console.log(fullName("Sasta"));
+
+// optional parameter
+const getLetter = (val1: string, val2?: string): string => {
+    return val1 + " " + val2;
+}
+
+console.log(getLetter("A"));

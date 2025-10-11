@@ -26,4 +26,9 @@ const fullName = (first, last = "Siahaan") => {
     return first + " " + last;
 };
 console.log(fullName("Sasta"));
+// optional parameter
+const getLetter = (val1, val2) => {
+    return val1 + " " + val2;
+};
+console.log(getLetter("A"));
 //# sourceMappingURL=function.js.map
