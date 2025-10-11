@@ -26,6 +26,7 @@ class Admin extends User {
     read = true;
     write = true;
     phone;
+    _email = "";
     constructor(phone, name, age) {
         super(name, age);
         this.phone = phone;
@@ -37,10 +38,18 @@ class Admin extends User {
         };
     }
     ;
+    set email(value) {
+        this._email = value;
+    }
+    get email() {
+        return this._email;
+    }
 }
 let admin = new Admin("08190318400", "Steorra", 20);
 admin.getName();
 admin.getRole();
 admin.setName("OOP");
 admin.phone;
+admin.email = 'tahsastavaltiel@gmail.com';
+console.log(admin.email);
 //# sourceMappingURL=class.js.map
