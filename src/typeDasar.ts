@@ -18,3 +18,4 @@ heroes = 20;
 heroes = [];
 heroes = {}
 heroes = true || false || "string";
+
