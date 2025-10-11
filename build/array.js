@@ -10,5 +10,5 @@ array3 = [1, 'string', true, {}];
 // tuples
 let biodata;
 biodata = ['tahsasta', 20];
-biodata = ['steorra'., 21];
+biodata = ['steorra', 21];
 //# sourceMappingURL=array.js.map

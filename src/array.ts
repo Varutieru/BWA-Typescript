@@ -11,4 +11,4 @@ array3 = [1, 'string', true, {}];
 // tuples
 let biodata: [string, number];
 biodata = ['tahsasta', 20];
-biodata = ['steorra'. 21];
+biodata = ['steorra', 21];
