@@ -21,4 +21,9 @@ console.log(result);
 const Add = (val1, val2) => {
     return val1 + val2;
 };
+// default parameter
+const fullName = (first, last = "Siahaan") => {
+    return first + " " + last;
+};
+console.log(fullName("Sasta"));
 //# sourceMappingURL=function.js.map

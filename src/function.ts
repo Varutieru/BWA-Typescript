@@ -32,3 +32,10 @@ type Addition = (val1: number, val2: number) => number;
 const Add: Addition = (val1: number, val2: number): number => {
     return val1 + val2;
 }
+
+// default parameter
+const fullName = (first: string, last: string = "Siahaan"): string => {
+    return first + " " + last
+}
+
+console.log(fullName("Sasta"));
