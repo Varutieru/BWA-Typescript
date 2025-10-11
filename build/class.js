@@ -25,6 +25,11 @@ exports.User = User;
 class Admin extends User {
     read = true;
     write = true;
+    phone;
+    constructor(phone, name, age) {
+        super(name, age);
+        this.phone = phone;
+    }
     getRole() {
         return {
             read: this.read,
@@ -33,8 +38,9 @@ class Admin extends User {
     }
     ;
 }
-let admin = new Admin("Steorra", 20);
+let admin = new Admin("08190318400", "Steorra", 20);
 admin.getName();
 admin.getRole();
 admin.setName("OOP");
+admin.phone;
 //# sourceMappingURL=class.js.map
