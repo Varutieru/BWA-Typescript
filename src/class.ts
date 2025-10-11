@@ -7,12 +7,34 @@
 // }
 
 export class User {
-    public name: string;
+    name: string;
 
     constructor(name: string, public age: number) {
         this.name = name;
     }
+
+    setName(value: string): void {
+        this.name = value;
+    }
+
+    getName = (): string => {
+        return this.name;
+    }
 }
 
-let user = new User("Sasta", 20);
-console.log(user);
+class Admin extends User {
+    read: boolean = true;
+    write: boolean = true;
+
+    getRole(): {read: boolean, write: boolean} {
+        return {
+            read: this.read,
+            write: this.write
+        };
+    };
+}
+
+let admin = new Admin("Steorra", 20);
+admin.getName();
+admin.getRole();
+admin.setName("OOP");
