@@ -27,6 +27,7 @@ class Admin extends User {
     write: boolean = true;
     phone: string;
     private _email: string = "";
+    static getRoleName: string = "Admin";
 
     constructor(phone: string, name: string, age: number) {
         super(name, age);
@@ -41,6 +42,12 @@ class Admin extends User {
     };
 
     set email(value: string) {
+        if(value.length < 5) {
+            this._email = "Email Salah"
+        }
+        else {
+            this._email = value;
+        }
         this._email = value;
     }
 
@@ -49,11 +56,5 @@ class Admin extends User {
     }
 }
 
-let admin = new Admin("08190318400", "Steorra", 20);
-admin.getName();
-admin.getRole();
-admin.setName("OOP");
-admin.phone;
-
-admin.email = 'tahsastavaltiel@gmail.com';
-console.log(admin.email);
+let admin = Admin.getRoleName;
+console.log(admin);
